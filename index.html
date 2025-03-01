@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+
+  <title>Wealth, shown to scale</title>
+  <meta name="description" content="Inequality in the United States is out of control. Here we visualize the issue in a unique way." />
+
+  <link rel="stylesheet" type="text/css" href="main.css?version=1.10">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+</head>
+<body>
+
+  <div class="wealth-wrapper-outer">
+    <div class="wealth-row wealth-row-one">
+      <div class="title-screen">
+        <h1>Wealth Shown to Scale</h1>
+        <div class="scroll-this-way">
+          <span>scroll right</span>
+          <div id="instructions" class="instructions"></div>
+        </div>
+      </div>
+      <div class="wealth-wrapper">
+        <h2 class="wealth-title">$1,000</h2>
+        <div class="wealth one-thousand"></div>
+        <div class="arrow">
+          <svg viewBox="668 -8 14 70" width="14" height="70">
+            <path d="M 676.4207 61.25 L 673.2793 61.25 L 673.2793 6.822266 L 668.6 6.822266 L 674.85 -7.8 L 681.1 6.822266 L 676.4207 6.822266 Z" fill="#ccc"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="wealth-wrapper median">
+        <h2 class="wealth-title">$77,719 <span class="explainer">(Median US household income)</span></h2>
+        <div class="wealth median-income"></div>
+      </div>
+
+      <div class="wealth-wrapper million">
+        <h2 class="wealth-title">$1 million</h2>
+        <div class="wealth"></div>
+      </div>
+
+      <div class="wealth-wrapper billion">
+        <div class="wealth">
+          <h2 class="wealth-title">$1 billion</h2>
+        </div>
+      </div>
+
+      <div name="bezos" class="wealth-wrapper bezos">
+        <div class="text-infobox infobox">
+          <div id="bezos-counter-start" class="title"></div>
+        </div>
+        <div id="bezos" class="wealth ruler">
+          <h2 class="wealth-title">$396.8 billion (wealth of Elon Musk)</h2>
+          <div class="counter" id="bezos-counter"></div>
+          <div class="key">
+            <span>$80 million</span>
+          </div>
+
+          <div class="text-infobox infobox first">
+            <div class="title">Most people have difficulty conceptualizing wealth this vast as it is rarely represented to scale.</div>
+          </div>
+
+          <div class="text-infobox infobox">
+            <div class="title">For this reason, Americans under-estimate the wealth of the ultrarich.</div>
+          </div>
+
+          <div class="five-pixels text-infobox infobox-half infobox">
+            <div class="title">Every 10 pixels you scroll is $5 million.</div>
+          </div>
+
+          <div class="coming-up text-infobox infobox">
+            <div class="title">Keep scrolling, there's more to see.</div>
+          </div>
+
+          <div class="text-infobox infobox infobox-half">
+            <div class="title">Let's put this wealth into perspective...</div>
+          </div>
+
+          <div class="infobox infobox-half home">
+            <div class="title-square-wrapper">
+              <div class="title">Median cost of buying a home ($419,200)</div>
+              <div class="square"></div>
+            </div>
+          </div>
+
+          <div class="infobox infobox-half lifetime">
+            <div class="title-square-wrapper">
+              <div class="title">All the money you will earn throughout your lifetime (about $1.5 million)</div>
+              <div class="square"></div>
+            </div>
+          </div>
+
+          <div class="infobox infobox-half tesla">
+            <div class="title-square-wrapper">
+              <div class="title">Median annual pay of a Tesla employee ($124,000)</div>
+              <div class="square"></div>
+            </div>
+          </div>
+
+          <div class="infobox infobox-half">
+            <div class="title-square-wrapper">
+              <div class="title">Last year, Musk proposed a $44.9 billion pack package for himself. Does he really work 360,000 times harder than his employees?</div>
+              <div class="square"></div>
+            </div>
+          </div>
+
+          <div class="infobox infobox-half">
+            <div class="title-square-wrapper">
+              <div class="title">If you earn $80,000 a year (about the median income), it would take 12.5 years to amass a fortune of one million dollars.</div>
+              <div class="square"></div>
+            </div>
+          </div>
+
+          <div class="infobox infobox-half">
+            <div class="title-square-wrapper">
+              <div class="title">If you earn $80,000 a year, it would take 12,500 years to amass a fortune of one billion dollars.</div>
+            </div>
+          </div>
+
+          <div class="infobox infobox-half text-infobox">
+            <div class="title">
+              <p>A millionaire is closer to being homeless than to being a billionaire.</p>
+            </div>
+          </div>
+
+          <div class="infobox infobox-half text-infobox">
+            <div class="title">
+              <p>Even those we consider to be unachievably rich are dwarfed in comparison to billionaires.</p>
+            </div>
+          </div>
+
+          <div class="infobox infobox-quarter celebrities">
+            <div class="column-infobox">
+              <div class="sub-infobox jen">
+                <div class="title">Wealth of actress Jennifer Aniston ($300 million)</div>
+                <div class="square shadow"></div>
+              </div>
+            </div>
+
+            <div class="sub-infobox walmart">
+                <div class="title">Net worth of Walmart CEO Doug McMillon ($502 million)</div>
+                <div class="square shadow"></div>
+            </div>
+          </div>
+
+          <div class="column-infobox">
+            <div class="sub-infobox doctor small">
+              <div class="title">Lifetime earnings of a doctor, on average ($10 million)</div>
+              <div class="square shadow"></div>
+            </div>
+
+            <div class="sub-infobox lawyer small">
+              <div class="title">Lifetime earnings of a lawyer, on average ($7 million)</div>
+              <div class="square shadow"></div>
+            </div>
+          </div>
+
+            <div class="infobox infobox-half election">
+              <div class="square shadow">
+                <div class="title">Since Trump was elected on November 6th 2024, Musk has made <a href="https://www.forbes.com/sites/tylerroush/2024/11/06/tesla-shares-hit-record-soaring-12-and-elon-musk-becomes-15-billion-richer-with-trump-victory/" target="_blank"> $154 billion</a>.</div>
+                <div class="midtext-wrapper">
+                  <div class="midtext">That's a good return on the <a href="https://www.forbes.com/sites/alisondurkee/2024/12/05/elon-musk-spent-more-than-200-million-to-help-trump-get-elected/" target="_blank">$239 million</a> investment he made donating to Trump's campaign.</div>
+                </div>               
+              </div>
+            </div>
+
+            <div class="infobox infobox-close text-infobox">
+              <div class="title">
+                <p>Billionaires are products of policy failure, not just hard work.</p>
+                </div>
+            </div>
+    
+              <div class="infobox infobox-close text-infobox">
+                <div class="title">
+                  <p>No individual needs or deserves this much wealth.</p>
+                </div>
+              </div>
+
+          </div>
+
+</div>
+<script type="text/javascript" src="main.js?version=1.9"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2320532-12"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-2320532-12');
+</script>
+</body>
+</html>
